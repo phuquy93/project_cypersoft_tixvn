@@ -1,0 +1,39 @@
+.header__left{
+    display: flex;
+    align-items: center;
+    .navbar-brand{
+        flex-grow: 1;
+        img{
+            width: 110px;
+        }
+    }
+    .categories{
+        flex-grow: 1;
+        color: $color-black-light;
+        @include w768(){
+            display: none;
+        }
+    }
+    .headerForm{
+        flex-grow: 5;
+        @include search();
+        @include w768(){
+            display: none;
+        }
+    }
+}
+
+@include w768(){
+    .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        border: none;
+    }
+    .header__right {
+        display: none;
+    }
+    .hidden-xs {
+        display: none;
+    }
+}
