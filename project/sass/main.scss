@@ -6,14 +6,19 @@
 //vendor
 
 //Base
-@import './Base/reset';
-@import './Base/customize';
+@import './Base/normalized';
 
 //components
-@import './Components/button';
+
 
 //layouts
 @import './Layouts/header';
+@import './Layouts/banner';
+@import './Layouts/tools';
+@import './Layouts/movie';
+@import './Layouts/new';
+@import './Layouts/contact';
+@import './Layouts/boxTime';
 
 //Pages
 

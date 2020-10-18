@@ -1,29 +1,37 @@
 .new{
-    
+    padding-top: 80px;
+    background: url(../img/back-news.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    .row {
+        > div {
+            margin-bottom: 25px;
+        }
+    }
     .nav-tabs{
-        width: 30%;
-        margin: 0 auto;
-        transform: translateX(10%);
-    .nav-link ,.nav-link.active{
-        border: none;
-        &:hover{
-            font-size: 25px;
-            margin-left: -10px;
-            margin-top: -7px;
+        margin-bottom: 20px;
+        .nav-link{
+            border: none;  
+            font-size: 20px;
             transition: all 0.2s;
-        }
-        &:focus{
-            font-size: 25px;
-            margin-left: -10px;
-            margin-top: -7px;
-            color: #fa5238;
-        }
-       
+            padding: 0 20px;
+            background-color: transparent;
+            &:hover{    
+                color: #fa5238;
+                transform: scale(1.1);
+            }
+            &.active {
+                color: #fa5238;
+                transform: scale(1.1);
+            }
         }
     
     }
     ul{
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
             a{
                 border: none;
                 color: black;
@@ -33,7 +41,7 @@
         }
         img{
             width: 100%;
-            
+            border-radius: 4px;
         }
         p{
             font-size: 13px;
@@ -41,10 +49,11 @@
         }
         .like{
             text-decoration: none;
-            color: black;
-            margin: 0 10px;
+            color: #bbb;
+            margin-right: 10px;
+            font-size: 12px;
             img{
-                width: 3%;
+                width: 15px;
                 &:hover{
                     width: 4%;
                     transition: all 0.5s;
@@ -56,6 +65,10 @@
             text-decoration: none;
             color: black;
             font-weight: bold;
+            line-height: 20px;
+            transition: all .3s;
+            display: inline-block;
+            margin: 8px 0;
             &:hover{
                 color: #fb4226;
             }
@@ -65,12 +78,16 @@
             display: flex;
             margin-bottom: 20px;
             img{
-                width: 70%;
                 border-radius: 5px;
+            }
+            > div:first-child {
+                width: 80px;
+                margin-right: 10px;
             }
             a{
                 text-decoration: none;
                 color: black;
+                display: inline-block;
             }
             
         }
@@ -84,11 +101,22 @@
                 color: #949494;
                 background-color: white;
                 border-radius: 5px;
+                transition: all .3s;
                 &:hover{
                     background-color: #fb4226;
                     color: white;
+                    border-color: transparent;
                 }
             }
         }
-        
+}
+@media (max-width: 768px) {
+    .new {
+        padding-top: 40px;
+        .nav-tabs {
+            .nav-link {
+                font-size: 17px;
+            }
+        }
+    }
 }

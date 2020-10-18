@@ -1,45 +1,44 @@
 .banner{
     margin-top: 53px;
     .banner__content{
-        background-color: red;
         .img__h1{
             background-image: url(../img/phim2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            height: 900px;
+            height: 90vh;
             width: 100%;
         }
         .img__h2{
             background-image: url(../img/phim2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            height: 900px;
+            height: 90vh;
             width: 100%;
         }
         .img__h3{
             background-image: url(../img/phim1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            height: 900px;
+            height: 90vh;
             width: 100%;
         }
         .img__h4{
             background-image: url(../img/phim4.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            height: 900px;
+            height: 90vh;
             width: 100%;
         }
         .img__h5{
             background-image: url(../img/phim5.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            height: 900px;
+            height: 90vh;
             width: 100%;
         }
         .owl-dots{
             position: absolute;
-            bottom: 75px;
+            bottom: 65px;
             left: 0;
             width: 100%;
             text-align: center;
@@ -47,22 +46,29 @@
 
         }
         .owl-dot{
-            width: 15px;
-            height: 15px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
             margin: 0 5px;
             background-color: #d8d8d8;
-            &:focus{
+            outline: none;
+            &.active {
                 background-color: #fb4226;
-                border:  solid 0px;
             }
         }
-        .owl-nav{
-            display: block;
-            width: 100%;
+        .owl-prev,.owl-next{
             position: absolute;
-            z-index: 3;
-            top: 40%;
-        }
+            top: 50%;
+            transform: translateY(-50%);
+            img {
+                width: 50px;
+            }
+         }
+         .owl-prev {
+             left: 35px;
+         }
+         .owl-next{
+            right: 35px;
+         }
     }
 }
