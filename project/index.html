@@ -15,23 +15,1254 @@
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
 
-        <!-- Font google -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
     <!-- Main css -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/MHung.css">
 
 </head>
 
 <body>
+    <header>
+        <div class="header__content">
+            <div> <img src="./img/logo.png"></div>
+            <div class="header2">
+                <a href="">Lịch Chiếu</a>
+                <a href="">Cụm Rạp</a>
+                <a href="">Tin Tức</a>
+                <a href="">Ứng Dụng</a>
+            </div>
+            <div class="header3">
+                <a href="" class="dangnhap"><i class="fa fa-portrait"></i> Đăng Nhập</a>
+                <i class="fa fa-map-marker-alt"></i>
+                <select>
+                    <option>Hồ Chí Minh</option>
+                    <option>Hà Nội</option>
+                    <option>Đà Nẵng</option>
+                    <option>Nha Trang</option>
+                    <option>Bình Dương</option>
+                    <option>Phan Thiết</option>
+                    <option>Vũng Tàu</option>
+                    <option>Cần Thơ</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="banner__content">
+            <div class="owl-carousel owl-theme">
+                <div class="banner__img img__h1"></div>
+                <div class="banner__img img__h2"></div>
+                <div class="banner__img img__h3"></div>
+                <div class="banner__img img__h4"></div>
+                <div class="banner__img img__h5"></div>
+            </div>
+        </div>
+    </section>
+    <section class="tools">
+        <div class="tools__item item1">
+            <select>
+                <option disabled selected hidden>Phim</option>
+                <option>Transfomer 4: Kỷ Nguyên Hủy Diệt</option>
+                <option>The Amazing Spiderman: Siêu Nhện Tái Xuất</option>
+                <option>Ice Age 4: Lục Địa Trôi Dạt</option>
+                <option>Im Number Four: Tôi Là Số 4</option>
+                <option>Abraham Lincoln: Thợ Săn Ma Cà Rồng</option>
+                <option>Toy Story: Câu Chuyện Đồ Chơi</option>
+                <option>X-men Wolverine: Nguồn Gốc Người Sói</option>
+            </select>
+        </div>
+        <div class="tools__item">
+            <select>
+                <option disabled selected hidden>Rạp</option>
+                <option>Hà Nội</option>
+                <option>Đà Nẵng</option>
+                <option>Nha Trang</option>
+                <option>Bình Dương</option>
+                <option>Phan Thiết</option>
+                <option>Vũng Tàu</option>
+                <option>Cần Thơ</option>
+            </select>
+        </div>
+        <div class="tools__item">
+            <select>
+                <option disabled selected hidden>Ngày Xem</option>
+                <option>Thứ 2</option>
+                <option>Thứ 3</option>
+                <option>Thứ 4</option>
+                <option>Thứ 5</option>
+                <option>Thứ 6</option>
+                <option>Thứ 7</option>
+                <option>Chủ Nhật</option>
+            </select>
+        </div>
+        <div class="tools__item">
+            <select>
+                <option disabled selected hidden>Suất Chiếu</option>
+                <option>Hà Nội</option>
+                <option>Đà Nẵng</option>
+                <option>Nha Trang</option>
+                <option>Bình Dương</option>
+                <option>Phan Thiết</option>
+                <option>Vũng Tàu</option>
+                <option>Cần Thơ</option>
+            </select>
+        </div>
+        <div class="tools__item">
+            <button>MUA VÉ NGAY</button>
+        </div>
+    </section>
+    <section class="movie">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="navId">
+            <li class="nav-item">
+                <a href="#dc" class="nav-link active" data-toggle="tab">Phim Đang Chiếu</a>
+            </li>
+            <li class="nav-item">
+                <a href="#sc" class="nav-link" data-toggle="tab">Phim Sắp Chiếu</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="dc" role="tabpanel">
+                <div class="owl-carousel owl-theme">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim6.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> The Dark Knight Rises</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim8.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 3</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim9.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 5</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim10.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 4</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim11.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> The Wolverine</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim13.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Black Panther</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim18.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Abraham Lincoln</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim12.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Iron Man 3</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim6.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> The Dark Knight Rises</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim8.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 3</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim9.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 5</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim10.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 4</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim11.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> The Wolverine</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim13.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Black Panther</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim18.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Abraham Lincoln</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim12.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Iron Man 3</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="sc" role="tabpanel">
+                <div class="owl-carousel owl-theme">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim6.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> The Dark Knight Rises</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim8.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 3</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim9.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 5</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim10.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 4</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim11.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> The Wolverine</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim13.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Black Panther</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim18.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Abraham Lincoln</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim12.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Iron Man 3</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim6.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> The Dark Knight Rises</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim8.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 3</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim9.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 5</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim10.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Transfomer 4</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim11.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> The Wolverine</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim13.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Black Panther</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim18.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Abraham Lincoln</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 col-sm-6">
+                            <div class="imgg">
+                                <div class="img__phim"><img src="./img/phim12.jpg" alt="">
+                                    <button class="icon"><i class="fa fa-play"></i></button>
+                                </div>
+                                <img class="dattruoc" src="./img/dattruoc.png" alt="">
+                                <div class="point">
+                                    <p>8.5</p>
+                                    <div class="starr">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                        <img src="./img/star.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <p> <span>P</span> Iron Man 3</p>
+                                <h4>115 Phút</h4>
+                            </div>
+                            <div class="buying">
+                                
+                                <div><button class="muave">MUA VÉ</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="navId">
+            <li class="nav-item">
+                <a href="#24h" class="nav-link active" data-toggle="tab">Điện Ảnh 24h</a>
+            </li>
 
+            </li>
+            <li class="nav-item">
+                <a href="#review" class="nav-link" data-toggle="tab">Review</a>
+            </li>
+            <li class="nav-item">
+                <a href="#khuyenmai" class="nav-link" data-toggle="tab">Khuyến Mãi</a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="#24h" role="tabpanel">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-sm-6">
+                            <a href="#"><img src="./img/new1.png" alt=""></a>
+                            <a class="title" href="#"><span>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị
+                                    Antebellum: Bẫy Thực Tại Kinh Hoàng</span></a>
+                            <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên
+                                nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của
+                                loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="./img/new1.png" alt=""></a>
+                            <a class="title" href="#"><span>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị
+                                    Antebellum: Bẫy Thực Tại Kinh Hoàng</span></a>
+                            <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên
+                                nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của
+                                loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="./img/new4.png" alt=""></a>
+                            <a class="title" href="#"><span>Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</span></a>
+                            <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="./img/new5.png" alt=""></a>
+                            <a class="title" href="#"><span>Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</span></a>
+
+                            <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siê </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new2.png" alt=""></a></div>
+                                <div><a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new3.png" alt=""></a></div>
+                                <div><a href="#">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new2.png" alt=""></a></div>
+                                <div><a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new3.png" alt=""></a></div>
+                                <div><a href="#">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám</a></div>
+                            </div>
+                        </div>
+                        <div class="new__button"><button>Xem Thêm</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="#review" role="tabpanel">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-sm-6">
+                            <a href="#"><img src="./img/new1.png" alt=""></a>
+                            <a class="title" href="#"><span>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị
+                                    Antebellum: Bẫy Thực Tại Kinh Hoàng</span></a>
+                            <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên
+                                nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của
+                                loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="./img/new1.png" alt=""></a>
+                            <a class="title" href="#"><span>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị
+                                    Antebellum: Bẫy Thực Tại Kinh Hoàng</span></a>
+                            <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên
+                                nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của
+                                loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="./img/new4.png" alt=""></a>
+                            <a class="title" href="#"><span>Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</span></a>
+                            <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="./img/new5.png" alt=""></a>
+                            <a class="title" href="#"><span>Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</span></a>
+
+                            <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siê </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new2.png" alt=""></a></div>
+                                <div><a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new3.png" alt=""></a></div>
+                                <div><a href="#">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new2.png" alt=""></a></div>
+                                <div><a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new3.png" alt=""></a></div>
+                                <div><a href="#">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám</a></div>
+                            </div>
+                        </div>
+                        <div class="new__button"><button>Xem Thêm</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="#khuyenmai" role="tabpanel">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-sm-6">
+                            <a href="#"><img src="./img/new1.png" alt=""></a>
+                            <a class="title" href="#"><span>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị
+                                    Antebellum: Bẫy Thực Tại Kinh Hoàng</span></a>
+                            <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên
+                                nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của
+                                loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#"><img src="./img/new1.png" alt=""></a>
+                            <a class="title" href="#"><span>[ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị
+                                    Antebellum: Bẫy Thực Tại Kinh Hoàng</span></a>
+                            <p>Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên
+                                nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất đã làm nên thành công của
+                                loạt tác phẩm ấn tượng “Get Out”, “Us” hay </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="./img/new4.png" alt=""></a>
+                            <a class="title" href="#"><span>Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt Christopher Nolan</span></a>
+                            <p>Làng phim đương đại những năm qua chứng kiến sự lên ngôi của cái tên Christopher Nolan, được biết tới như một trong những đạo diễn thiên tài với khả năng tạo ra siêu phẩm bạc tỉ chất lượng. </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#"><img src="./img/new5.png" alt=""></a>
+                            <a class="title" href="#"><span>Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng vé' xứ Hàn</span></a>
+
+                            <p>Sau 7 năm kể từ New World – bộ phim đạt thành tích hơn 4.68 triệu vé, hai tên tuổi lão làng trong làng điện ảnh Hàn Quốc mới tiếp tục tái hợp trong Truy Cùng Giết Tận – một bộ phim hành động siê </p>
+                            <a class="like" href="#"><img src="./img/like.png" alt=""> 1</a>
+                            <a class="like" href="#"><img src="./img/comment.png" alt=""> 1</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new2.png" alt=""></a></div>
+                                <div><a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new3.png" alt=""></a></div>
+                                <div><a href="#">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new2.png" alt=""></a></div>
+                                <div><a href="#">5 lý do khiến bạn không thể bỏ qua bộ phim Cậu Bé Người Gỗ Pinocchio</a></div>
+                            </div>
+                            <div class="new__item">
+                                <div><a href="#"><img src="./img/new3.png" alt=""></a></div>
+                                <div><a href="#">6 đạo diễn tỉ đô làm nên thành công của những bom tấn đình đám</a></div>
+                            </div>
+                        </div>
+                        <div class="new__button"><button>Xem Thêm</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="contact">
+        <div class="contact__content">
+                <div class="row contact__pr">
+                    <div class="col-sm-6 contact__app">
+                        <h1>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h1>
+                        <p> Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+                        <button>App miễn phí - Tải về ngay!</button>
+                        <p class="version">TIX có hai phiên bản <a href="">iOS</a> & <a href="">Android</a></p>
+                    </div>
+                    <div class="col-12 col-sm-6 contact__img">
+                        <div><img class="mobile" src="./img/mobile.png" alt="">
+                        <div class="mobile__content"><img src="./img/slide2.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>  
+        </div>
+        <div class="contact__partner">
+            <div class="row partner__content">
+                <div class="col-sm-4 partner__item1">
+                    <h1>TIX</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p><a href="#">FAQ</a></p>
+                            <p><a href="#">Brand Guidelines</a></p> 
+                        </div>
+                        <div class="col-sm-6">
+                            <p><a href="#">Thỏa thuận sử dụng</a></p>
+                            <p><a href="#">Chính sách bảo mật</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 partner__item2">
+                    <h1>Đối Tác</h1>
+                    <div >
+                        <img src="./img/ic1.png" alt="">
+                        <img src="./img/ic2.png" alt="">
+                        <img src="./img/ic3.jpg" alt="">
+                        <img src="./img/ic4.png" alt="">
+                        <img src="./img/ic5.png" alt="">
+                    </div>
+                    <div >
+                        <img src="./img/ic6.jpg" alt="">
+                        <img src="./img/ic7.png" alt="">
+                        <img src="./img/ic8.png" alt="">
+                        <img src="./img/ic9.png" alt="">
+                        <img src="./img/ic10.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/ic11.png" alt="">
+                        <img src="./img/ic12.png" alt="">
+                        <img src="./img/ic13.png" alt="">
+                        <img src="./img/ic14.png" alt="">
+                        <img src="./img/ic15.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/ic16.png" alt="">
+                        <img src="./img/ic17.png" alt="">
+                        <img src="./img/ic18.png" alt="">
+                        <img src="./img/ic19.png" alt="">
+                        <img src="./img/ic20.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-4 partner__item3">
+                    <div>
+                        <h1>MOBILE APP</h1>
+                        <img src="./img/apple-logo.png" alt="">
+                        <img src="./img/android-logo.png" alt="">
+                    </div>
+                    <div>
+                        <h1 >SOCIAL</h1>
+                        <img src="./img/facebook-logo.png" alt="">
+                        <img src="./img/zalo-logo.png" alt="">
+                    </div>
+
+                   
+                </div>
+            </div>
+            <div class="row contact__address">
+                <div class="col-sm-12 address__item">
+                    <img class="img1" src="./img/ic21.jpg" alt="">
+                    <div  class="address">
+                        <h1>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h1>
+                        <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+                        <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</p>
+                        <p>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
+                        <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                        <p>Email: <a href="#">support@tix.vn</a></p>
+                    </div>
+                    <img class="img2" src="./img/datb.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./js/jquery-3.3.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <script src="./js/owl.carousel.min.js"></script>
-    
+    <script src="./JS/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                // 600:{
+                //     items:3
+                // },
+                // 1000:{
+                //     items:5
+                // }
+            }
+        })
+    </script>
+
 </body>
 
 </html>

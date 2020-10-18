@@ -1,39 +1,63 @@
-.header__left{
-    display: flex;
-    align-items: center;
-    .navbar-brand{
-        flex-grow: 1;
+header{
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+    transition: all 0.2s;
+    .header__content{
+        position: relative;
+        box-shadow: 0 0 15px rgba(0,0,0,.3);
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        top: -1px;
         img{
-            width: 110px;
+            width: 52px;
+            margin-left: 20px;
         }
-    }
-    .categories{
-        flex-grow: 1;
-        color: $color-black-light;
-        @include w768(){
-            display: none;
-        }
-    }
-    .headerForm{
-        flex-grow: 5;
-        @include search();
-        @include w768(){
-            display: none;
-        }
-    }
-}
-
-@include w768(){
-    .navbar-toggler {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        border: none;
-    }
-    .header__right {
-        display: none;
-    }
-    .hidden-xs {
-        display: none;
+       .header2{
+           margin-left: 10%;
+           a{
+               margin: 0 5px;
+               color: black;
+               &:hover{
+                   text-decoration: none;
+                   color: coral;
+               }
+               
+           }
+       }
+       .header3{
+           margin: 0 20px;
+           color: #9b9b9b;
+           
+           .dangnhap{
+            color: #9b9b9b;
+            margin-right: 20px;
+            border-right: solid 1px rgba(0, 0, 0, 0.205);
+            padding-right: 15px;
+            &:hover{
+                text-decoration: none;
+            }
+                i{
+                font-size: 25px;
+                margin-right: 5px;
+                
+                }
+           }
+           
+           select{
+               border: none;
+               padding-right: 20px;
+               color: #9b9b9b;
+               font-size: 15px;
+           }
+       }
+       
     }
 }

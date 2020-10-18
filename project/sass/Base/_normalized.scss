@@ -1,0 +1,29 @@
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    padding: 0;
+    z-index: 5;
+    span{
+        cursor: pointer;
+        font-size: 150px;
+        font-weight: 50;
+        color: #9b9b9b;
+        background: none;
+        &:hover{
+            background: none;
+        }
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.owl-next{
+    left: unset;
+    right: 0%;
+}
+.owl-dots{
+    position: absolute;
+    bottom: 10%;
+    left: 44%;
+}
